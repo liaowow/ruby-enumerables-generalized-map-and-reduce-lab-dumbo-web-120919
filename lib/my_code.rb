@@ -7,7 +7,7 @@ def map(arr)
     i += 1
   end
   new_arr
-end
+end 
 
 def reduce(arr, num = 0)
   val = num
