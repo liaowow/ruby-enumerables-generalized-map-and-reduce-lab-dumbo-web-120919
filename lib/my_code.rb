@@ -14,7 +14,7 @@ def reduce(arr, num)
   i = 0
   while i < arr.length do
     if num
-      val += yield(arr[i], num = 0)
+      val += yield(arr[i], num)
       
     elsif yield(arr[i], num)
       return true
