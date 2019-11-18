@@ -18,3 +18,4 @@ def reduce(arr, num = 0)
   end
   total
 end
+
