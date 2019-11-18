@@ -16,7 +16,7 @@ def reduce(arr, num)
     if num
       val += yield(arr[i], num = 0)
       
-    elsif yield(arr[i])
+    elsif yield(arr[i], num)
       return true
       
     else
