@@ -13,7 +13,7 @@ def reduce(arr, num = 0)
   val = num
   i = 0
   while i < arr.length do
-    if type(yield(arr[i], num)) == 'int'
+    if num
       val += yield(arr[i], num)
       
     elsif yield(arr[i], num)
