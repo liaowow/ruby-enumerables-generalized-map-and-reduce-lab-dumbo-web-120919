@@ -16,7 +16,7 @@ def reduce(arr, num = 0)
     if !yield(arr[i], num)
       return false
     else
-    val += yield(arr[i], num)
+    val = yield(arr[i], num)
     end
     i += 1
   end
