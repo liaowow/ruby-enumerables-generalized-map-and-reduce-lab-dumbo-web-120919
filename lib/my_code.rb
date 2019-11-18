@@ -9,17 +9,16 @@ def map(arr)
   new_arr
 end 
 
-def reduce(arr, num = 0)
-  val = num
-  i = 0
-  while i < arr.length do
-    if !yield(arr[i], num)
-      return false
-    else
-    val += yield(arr[i], num = 0)
-    end
-    i += 1
+def reduce(arr, num = nil)
+  if num
+    sum = num
+    i = 0
+  else
+    sum = arr[i]
+    i = 1
   end
- val
+  
+  while i <
+  
 end
 
