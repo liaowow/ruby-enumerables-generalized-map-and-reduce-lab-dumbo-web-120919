@@ -10,13 +10,12 @@ def map(arr)
 end
 
 def reduce(arr, num = 0)
-  val = num
   i = 0
   while i < arr.length do
-    val += yield(arr[i], num)
+    num += yield(arr[i], num)
 
     i += 1
   end
-  val
+  num
 end
 
