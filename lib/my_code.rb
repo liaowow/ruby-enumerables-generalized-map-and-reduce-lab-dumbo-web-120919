@@ -9,12 +9,12 @@ def map(arr)
   new_arr
 end
 
-def reduce(arr, num = 0)
+def reduce(arr, num)
   val = num
   i = 0
   while i < arr.length do
     if num
-      val += yield(arr[i], num)
+      val += yield(arr[i], num = 0)
       
     elsif yield(arr[i], num)
       return true
