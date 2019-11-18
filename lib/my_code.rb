@@ -15,8 +15,10 @@ def reduce(arr, num = 0)
   while i < arr.length do
     if type(yield(arr[i], num)) == 'int'
       val += yield(arr[i], num)
-      elsif yield(arr[i], num)
+      
+    elsif yield(arr[i], num)
       return true
+      
     else
       return false
     end
